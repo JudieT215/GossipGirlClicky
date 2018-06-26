@@ -12,21 +12,27 @@ class App extends React.Component {
     gossipGirl: gossipGirl,
     count: 0,
     lost: 0,
-    clicked: false,
+    GGclicked: false,
   };
 
 
-  handleClick = () => {
+  handleClick = (id) => {
     // We always use the setState method to update a component's state
     if (this.setState.clicked === false) {
       console.log("you lose")
     }
     else {
-      this.setState({ count: this.state.count + 1 });
-      this.setState({ checked: !this.state.checked })
+      this.addScore
     }
     this.shuffleCards;
   };
+
+  addScore = () => {
+    this.setState({ count: this.state.count + 1 });
+    this.setState({ GGclicked: true });
+
+
+  }
 
 
   // Fisher-Yates / Durstenfeld Shuffle algorithm
@@ -52,9 +58,9 @@ shuffleCards =() =>{
         <GameBoard>
           
             {this.state.gossipGirl.map(gossipGirl => (
-              <span onClick= {this.handleClick}>
-              <Card
-                key={gossipGirl.id}
+              <span onClick = {this.handleClick}>
+              <Card 
+                key={gossipGirl._id}
                 id ={gossipGirl.id}
                 name={gossipGirl.name}
                 image={gossipGirl.image}
