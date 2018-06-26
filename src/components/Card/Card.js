@@ -5,7 +5,7 @@ import "./Card.css";
 
 
 const Card = props => (
-  <div className="card">
+  <div className="card clicked">
     <div className="img-container">
       <img alt={props.name} src={props.image} />
     </div>
