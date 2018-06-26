@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Serena van der Woodsen",
+        "image": "./assets/serena.jpg",
+        "information": "Serena is regarded as the IT GIRL of the Upper East Side.",
+        "actor": "Blake Lively",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "Blair Waldorf",
+        "image": "./assets/blair.jpg",
+        "information": "./Blair is regarded as the Queen Bee of the Upper East Side.",
+        "actor": "Leighton Meester"
+    },
+    {
+        "id": 3,
+        "name": "Chuck Bass",
+        "image": "./assets/chuck.jpg",
+        "information": "a self-made billionaire who owns the New York Palace Hotel.",
+        "actor": "Ed Westwick",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "Jenny Humphrey",
+        "image": "./assets/jenny.jpg",
+        "information": "She is the younger sister of Dan Humphrey and a social climber who idolizes Blair Waldorf and Serena van der Woodsen.",
+        "actor": "Taylor Momsen",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "Dorota Kishlovsky",
+        "image": "./assets/dorota.jpg",
+        "information": "Blair Waldorf's lovable, weird and often put-upon maid",
+        "actor": "Zuzanna Szadkowski",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "Nate Archibald",
+        "image": "./assets/nate.jpg",
+        "information": "Nate is considered to be the golden boy of the Upper East Side.",
+        "actor": "Chace Crawford",
+        "clicked": false
+    }
+
+]
