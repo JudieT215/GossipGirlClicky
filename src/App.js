@@ -16,20 +16,27 @@ class App extends React.Component {
   };
 
 
-  handleClick = (id) => {
-    // We always use the setState method to update a component's state
-    if (this.setState.clicked === false) {
-      console.log("you lose")
-    }
-    else {
-      this.addScore
-    }
-    this.shuffleCards;
+
+  handleClick = () => {
+    this.addScore;
+    this.setState({ count: this.state.count + 1 });
+    // const GGcard = this.state.gossipGirl.find(GGcards.id === id);
+
+    // const GGcards = this.state.gossipGirl;
+
+    // // We always use the setState method to update a component's state
+    // if (GGcard.clicked === false ) {
+    //   this.addScore;
+    // } else if (GGcard.clicked === true) {
+    //   console.log("you loss")
+    //   alert
+    // }
+    // this.shuffleCards;
   };
 
   addScore = () => {
     this.setState({ count: this.state.count + 1 });
-    this.setState({ GGclicked: true });
+    this.setState({ clicked: true });
 
 
   }
